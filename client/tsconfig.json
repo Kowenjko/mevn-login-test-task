@@ -13,6 +13,9 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "preserve",
+		"allowJs": false,
+		"alwaysStrict": true,
+		"noImplicitAny": true,
 
 		/* Linting */
 		"strict": true,
@@ -20,12 +23,6 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true
 	},
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.d.ts",
-		"src/**/*.tsx",
-		"src/**/*.vue",
-		"src/stores/store.js"
-	],
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

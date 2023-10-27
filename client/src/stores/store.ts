@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
@@ -15,8 +14,8 @@ export const useFormStore = defineStore('formStore', () => {
 		}
 	}
 
-	const setLoading = (value) => (loading.value = value)
-	const setUserEmail = (value) => (userEmail.value = value)
+	const setLoading = (value: any) => (loading.value = value)
+	const setUserEmail = (value: any) => (userEmail.value = value)
 
 	return {
 		userEmail,

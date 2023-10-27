@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-	userEmail?: string
+	userEmail: string | null
 }>()
 </script>
 <template>

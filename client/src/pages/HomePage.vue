@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import AuthForm from '../components/AuthForm.vue'
 import Info from '../components/Info.vue'
 import PopUp from '../components/PopUp.vue'
 import axios from 'axios'
 
-import { useFormStore } from '../stores/store.js'
+import { useFormStore } from '../stores/store'
 
 const email = ref('')
 const password = ref('')
